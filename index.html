@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shivang — Portfolio</title>
+  <meta name="description"
+    content="Shivang — Frontend-focused CS student. A clean, responsive portfolio built with HTML & CSS only." />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232A2F45'/%3E%3Ctext x='50' y='57' font-size='50' text-anchor='middle' fill='%23fff' font-family='Arial' font-weight='700'%3ES%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Shivang</a>
+
+      <input aria-label="menu-toggle" id="nav-toggle" type="checkbox" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="cta" href="/resume.pdf" download>Download Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Hello — I'm</p>
+          <h1 class="hero-title">Shivang</h1>
+          <p class="hero-sub">Frontend-focused CS student — crafting accessible, performant interfaces with semantic
+            HTML and modern CSS.</p>
+
+          <p class="hero-actions">
+            <a class="btn-primary" href="#projects">View My Work</a>
+            <a class="btn-ghost" href="#contact">Get in touch</a>
+          </p>
+
+          <ul class="skills-list" aria-label="skills">
+            <li>HTML & CSS</li>
+            <li>Responsive Design</li>
+            <li>Accessibility</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Git & Linux</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" aria-hidden="false">
+          <div class="profile-card">
+            <img src="/placeholder.svg" alt="Portrait placeholder" />
+            <div class="profile-meta">
+              <h3>Shivang</h3>
+              <p>Computer Science Student</p>
+              <div class="profile-stats">
+                <div>
+                  <strong>4</strong>
+                  <span>Projects</span>
+                </div>
+                <div>
+                  <strong>1</strong>
+                  <span>Year Learning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <p>I'm a first-year Computer Science student at Scaler School of Technology who loves building for the web. I
+            craft beautiful, usable interfaces with semantic HTML and modern CSS, and I focus on clarity, accessibility,
+            and performance. Outside class, I explore new web technologies, contribute to personal projects, and build
+            Python tools that solve real problems.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Background</h3>
+            <p>Enjoy turning ideas into clean, responsive UIs. Comfortable working from wireframes to polished
+              components and shipping minimal, fast pages.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>Skills</h3>
+            <ul class="skills">
+              <li><strong>HTML</strong><span>Semantic markup</span></li>
+              <li><strong>CSS</strong><span>Flexbox & Grid, Animations</span></li>
+              <li><strong>JavaScript</strong><span>DOM, basics</span></li>
+              <li><strong>Java</strong><span>OOP & fundamentals</span></li>
+              <li><strong>Python</strong><span>Automation scripts</span></li>
+              <li><strong>Tools</strong><span>Git, GitHub, Linux</span></li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <h3>Approach</h3>
+            <p>Accessibility first, mobile-first layouts, and maintainable CSS. Prefer simple, framework-free solutions
+              when they're fastest and clearest.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Selected Projects</h2>
+          <p>Featured work — responsive, accessible, and built with care.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="/placeholder.svg" alt="Project screenshot placeholder" />
+            <div class="project-body">
+              <h3>Portfolio Website</h3>
+              <p>Clean, responsive portfolio built with HTML & CSS only, focusing on accessibility and performance.</p>
+              <p class="project-meta">HTML • CSS</p>
+              <p class="project-links"><a href="#">Live</a> <a href="#">GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="/placeholder.svg" alt="Project screenshot placeholder" />
+            <div class="project-body">
+              <h3>YouTube Ad Blocker</h3>
+              <p>Lightweight tool to improve the video-watching experience by filtering ads.</p>
+              <p class="project-meta">Python</p>
+              <p class="project-links"><a href="#">Live</a> <a href="#">GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="/placeholder.svg" alt="Project screenshot placeholder" />
+            <div class="project-body">
+              <h3>Number Plate Recognition</h3>
+              <p>Computer vision prototype for detecting and reading license plates.</p>
+              <p class="project-meta">Python</p>
+              <p class="project-links"><a href="#">Live</a> <a href="#">GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="/placeholder.svg" alt="Project screenshot placeholder" />
+            <div class="project-body">
+              <h3>Jarvis Voice Assistant</h3>
+              <p>Voice-controlled assistant for quick tasks and automation.</p>
+              <p class="project-meta">Python</p>
+              <p class="project-links"><a href="#">Live</a> <a href="#">GitHub</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p>Interested in working together? Reach out — open to freelance and internships.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p><a href="mailto:hello@shivang.example">hello@shivang.example</a></p>
+
+            <h3>Social</h3>
+            <p>
+              <a href="#">LinkedIn</a> • <a href="#">GitHub</a>
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Quick Message</h3>
+            <form class="contact-form" action="#" method="POST">
+              <label>
+                <span class="sr-only">Your name</span>
+                <input type="text" name="name" placeholder="Your name" />
+              </label>
+              <label>
+                <span class="sr-only">Your email</span>
+                <input type="email" name="email" placeholder="you@domain.com" />
+              </label>
+              <label>
+                <span class="sr-only">Message</span>
+                <textarea name="message" rows="5" placeholder="Brief message"></textarea>
+              </label>
+              <div class="form-actions">
+                <button class="btn-primary" type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Shivang. Built with care — HTML & CSS only.</p>
+      <nav>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
