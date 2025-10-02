@@ -2,213 +2,179 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shivang — Portfolio</title>
-  <meta name="description"
-    content="Shivang — Frontend-focused CS student. A clean, responsive portfolio built with HTML & CSS only." />
-  <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232A2F45'/%3E%3Ctext x='50' y='57' font-size='50' text-anchor='middle' fill='%23fff' font-family='Arial' font-weight='700'%3ES%3C/text%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="portfolio.css" >
+  <meta name="description" content="Shivang — Computer Science student building clean, accessible web interfaces.">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">Shivang</a>
+  <header class="top-bar">
+    <div class="wrapper">
+      <a class="logo-link" href="#">Shivang</a>
 
-      <input aria-label="menu-toggle" id="nav-toggle" type="checkbox" class="nav-toggle" />
-      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+      <input id="menu-check" type="checkbox" class="menu-toggle">
+      <label for="menu-check" class="hamburger">
         <span></span><span></span><span></span>
       </label>
 
-      <nav class="nav">
+      <nav class="main-nav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#work">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a class="cta" href="/resume.pdf" download>Download Resume</a></li>
+          <li><a class="resume-btn" href="/resume.pdf" download>Resume</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">Hello — I'm</p>
-          <h1 class="hero-title">Shivang</h1>
-          <p class="hero-sub">Frontend-focused CS student — crafting accessible, performant interfaces with semantic
-            HTML and modern CSS.</p>
+    <section id="home" class="intro-section">
+      <div class="wrapper intro-layout">
+        <div class="intro-text">
+          <p class="greeting">Hello — I'm</p>
+          <h1>Shivang Kumar Dubey</h1>
+          <p class="tagline">Computer Science student at Scaler School of Technology — crafting accessible, performant
+            web interfaces with semantic HTML and modern CSS.</p>
 
-          <p class="hero-actions">
-            <a class="btn-primary" href="#projects">View My Work</a>
-            <a class="btn-ghost" href="#contact">Get in touch</a>
-          </p>
+          <div class="action-btns">
+            <a class="primary-link" href="#work">View My Work</a>
+            <a class="outline-link" href="#contact">Get in Touch</a>
+          </div>
 
-          <ul class="skills-list" aria-label="skills">
+          <ul class="tech-tags">
             <li>HTML & CSS</li>
-            <li>Responsive Design</li>
-            <li>Accessibility</li>
             <li>JavaScript</li>
             <li>Java</li>
             <li>Python</li>
             <li>Git & Linux</li>
           </ul>
         </div>
+   </section>
 
-        <div class="hero-card" aria-hidden="false">
-          <div class="profile-card">
-            <img src="/placeholder.svg" alt="Portrait placeholder" />
-            <div class="profile-meta">
-              <h3>Shivang</h3>
-              <p>Computer Science Student</p>
-              <div class="profile-stats">
-                <div>
-                  <strong>4</strong>
-                  <span>Projects</span>
-                </div>
-                <div>
-                  <strong>1</strong>
-                  <span>Year Learning</span>
-                </div>
+    <section id="about" class="content-section">
+      <div class="wrapper">
+        <header class="section-head">
+          <h2>About Me</h2>
+       <p>I’m a first-year Computer Science student who enjoys building things for the web and experimenting with new ideas. 
+      Most of my projects start from curiosity—whether it’s making small tools in Python or putting together clean, simple interfaces. 
+      I care about making my work practical and easy to use, and I’m excited to keep learning as I grow in the field.
+        </p>
+
+        </header>
+
+        <div class="card-grid">
+         <article class="card">
+        <article class="card">
+        <h3>Background</h3>
+        <p>Started with HTML/CSS basics and gradually expanding into JavaScript, Java, and Python. Learning through building projects and applying classroom concepts to real-world applications.</p>
+        </article>
+
+
+
+         <article class="card">
+          <h3>Skills</h3>
+          <ul class="skill-list">
+           <li><strong>HTML & CSS</strong> <span>Confident - Building layouts daily</span></li>
+           <li><strong>JavaScript</strong> <span>Learning - DOM basics</span></li>
+           <li><strong>Java</strong> <span>Learning - College coursework</span></li>
+           <li><strong>Python</strong> <span>Comfortable - Small projects</span></li>
+           <li><strong>Git & Linux</strong> <span>Familiar - Daily use</span></li>
+        </ul>
+     </article>
+
+
+         <article class="card">
+           <h3>Currently Learning</h3>
+           <p>Diving deeper into JavaScript DOM manipulation, exploring React basics, and improving my design skills with Figma. Always building small projects to practice new concepts.</p>
+         </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="content-section">
+      <div class="wrapper">
+        <header class="section-head">
+          <h2>Projects</h2>
+          <p>Featured work — responsive, accessible, built with care.</p>
+        </header>
+
+        <div class="work-grid">
+          <article class="work-card">
+            <img src="/portfolio-thumb.jpg" alt="Portfolio website">
+            <div class="work-info">
+              <h3>Portfolio Website</h3>
+              <p>Clean, responsive portfolio with HTML & CSS only, focusing on accessibility and performance.</p>
+              <p class="tech-stack">HTML • CSS</p>
+              <div class="links">
+                <a href="#">Live Site</a>
+                <a href="#">GitHub</a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section about">
-      <div class="container">
-        <div class="section-header">
-          <h2>About Me</h2>
-          <p>I'm a first-year Computer Science student at Scaler School of Technology who loves building for the web. I
-            craft beautiful, usable interfaces with semantic HTML and modern CSS, and I focus on clarity, accessibility,
-            and performance. Outside class, I explore new web technologies, contribute to personal projects, and build
-            Python tools that solve real problems.</p>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-card">
-            <h3>Background</h3>
-            <p>Enjoy turning ideas into clean, responsive UIs. Comfortable working from wireframes to polished
-              components and shipping minimal, fast pages.</p>
-          </div>
-
-          <div class="about-card">
-            <h3>Skills</h3>
-            <ul class="skills">
-              <li><strong>HTML</strong><span>Semantic markup</span></li>
-              <li><strong>CSS</strong><span>Flexbox & Grid, Animations</span></li>
-              <li><strong>JavaScript</strong><span>DOM, basics</span></li>
-              <li><strong>Java</strong><span>OOP & fundamentals</span></li>
-              <li><strong>Python</strong><span>Automation scripts</span></li>
-              <li><strong>Tools</strong><span>Git, GitHub, Linux</span></li>
-            </ul>
-          </div>
-
-          <div class="about-card">
-            <h3>Approach</h3>
-            <p>Accessibility first, mobile-first layouts, and maintainable CSS. Prefer simple, framework-free solutions
-              when they're fastest and clearest.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section projects">
-      <div class="container">
-        <div class="section-header">
-          <h2>Selected Projects</h2>
-          <p>Featured work — responsive, accessible, and built with care.</p>
-        </div>
-
-        <div class="projects-grid">
-          <article class="project-card">
-            <img src="/placeholder.svg" alt="Project screenshot placeholder" />
-            <div class="project-body">
-              <h3>Portfolio Website</h3>
-              <p>Clean, responsive portfolio built with HTML & CSS only, focusing on accessibility and performance.</p>
-              <p class="project-meta">HTML • CSS</p>
-              <p class="project-links"><a href="#">Live</a> <a href="#">GitHub</a></p>
-            </div>
           </article>
 
-          <article class="project-card">
-            <img src="/placeholder.svg" alt="Project screenshot placeholder" />
-            <div class="project-body">
+          <article class="work-card">
+            <img src="/adblocker-thumb.jpg" alt="Ad blocker">
+            <div class="work-info">
               <h3>YouTube Ad Blocker</h3>
-              <p>Lightweight tool to improve the video-watching experience by filtering ads.</p>
-              <p class="project-meta">Python</p>
-              <p class="project-links"><a href="#">Live</a> <a href="#">GitHub</a></p>
+              <p>Lightweight Python tool improving video experience by filtering advertisements.</p>
+              <p class="tech-stack">Python</p>
+              <div class="links">
+                <a href="#">Live</a>
+                <a href="#">Code</a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card">
-            <img src="/placeholder.svg" alt="Project screenshot placeholder" />
-            <div class="project-body">
+          <article class="work-card">
+            <img src="/plate-thumb.jpg" alt="License plate recognition">
+            <div class="work-info">
               <h3>Number Plate Recognition</h3>
-              <p>Computer vision prototype for detecting and reading license plates.</p>
-              <p class="project-meta">Python</p>
-              <p class="project-links"><a href="#">Live</a> <a href="#">GitHub</a></p>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <img src="/placeholder.svg" alt="Project screenshot placeholder" />
-            <div class="project-body">
-              <h3>Jarvis Voice Assistant</h3>
-              <p>Voice-controlled assistant for quick tasks and automation.</p>
-              <p class="project-meta">Python</p>
-              <p class="project-links"><a href="#">Live</a> <a href="#">GitHub</a></p>
+              <p>Computer vision project detecting and reading vehicle license plates.</p>
+              <p class="tech-stack">Python • OpenCV</p>
+              <div class="links">
+                <a href="#">Demo</a>
+                <a href="#">Source</a>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <div class="container">
-        <div class="section-header">
-          <h2>Contact</h2>
-          <p>Interested in working together? Reach out — open to freelance and internships.</p>
-        </div>
+    <section id="contact" class="content-section">
+      <div class="wrapper">
+        <header class="section-head">
+          <h2>Get in Touch</h2>
+          <p>Let's build something great.</p>
+        </header>
 
-        <div class="contact-grid">
-          <div class="contact-card">
+        <div class="contact-layout">
+          <div class="contact-info">
             <h3>Email</h3>
-            <p><a href="mailto:hello@shivang.example">hello@shivang.example</a></p>
+            <p><a href="mailto:shivangdubey731@gmail.com">Shivang</a></p>
 
             <h3>Social</h3>
             <p>
-              <a href="#">LinkedIn</a> • <a href="#">GitHub</a>
+              <a href="https://www.linkedin.com/in/shivang-kumar-dubey-6ab3282b1/" target="_blank">LinkedIn</a> •
+              <a href="https://github.com/Shivang731" target="_blank">GitHub</a>
             </p>
           </div>
 
-          <div class="contact-card">
+          <div class="contact-form-wrap">
             <h3>Quick Message</h3>
-            <form class="contact-form" action="#" method="POST">
-              <label>
-                <span class="sr-only">Your name</span>
-                <input type="text" name="name" placeholder="Your name" />
-              </label>
-              <label>
-                <span class="sr-only">Your email</span>
-                <input type="email" name="email" placeholder="you@domain.com" />
-              </label>
-              <label>
-                <span class="sr-only">Message</span>
-                <textarea name="message" rows="5" placeholder="Brief message"></textarea>
-              </label>
-              <div class="form-actions">
-                <button class="btn-primary" type="submit">Send Message</button>
-              </div>
+            <form class="msg-form" action="#" method="POST">
+              <input type="text" name="name" placeholder="Arjun" required>
+              <input type="email" name="email" placeholder="abcd@example.com" required>
+              <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+              <button type="submit">Send Message</button>
             </form>
           </div>
         </div>
@@ -216,9 +182,9 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2025 Shivang. Built with care — HTML & CSS only.</p>
+  <footer class="bottom-bar">
+    <div class="wrapper footer-wrap">
+      <p>© 2025 Shivang Kumar Dubey. Built with HTML & CSS.</p>
       <nav>
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
