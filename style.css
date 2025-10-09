@@ -1,10 +1,10 @@
-/* Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -14,23 +14,19 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
-
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 img {
   max-width: 100%;
   display: block;
 }
-
 /* Header */
 .top-bar {
   position: sticky;
@@ -41,48 +37,40 @@ img {
   z-index: 100;
   padding: 16px 0;
 }
-
 .top-bar .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .logo-link {
   font-size: 1.125rem;
   font-weight: 700;
 }
-
 .main-nav ul {
   display: flex;
   gap: 20px;
   list-style: none;
   align-items: center;
 }
-
 .main-nav a {
   padding: 8px 12px;
   border-radius: 8px;
   font-weight: 600;
   transition: background 0.2s;
 }
-
 .main-nav a:hover {
   background: rgba(20, 24, 37, 0.05);
 }
-
-.resume-btn {
+.resume-link {
   background: linear-gradient(90deg, #5b8def, #7b61ff);
   color: white !important;
   padding: 8px 16px !important;
   border-radius: 10px;
 }
-
 .menu-toggle,
 .hamburger {
   display: none;
 }
-
 /* Intro Section */
 .intro-section {
   padding: 80px 0;
@@ -90,39 +78,33 @@ img {
   display: flex;
   align-items: center;
 }
-
 .intro-layout {
   display: grid;
   grid-template-columns: 1fr 380px;
   gap: 48px;
   align-items: center;
 }
-
 .greeting {
   color: #64748b;
   font-weight: 600;
   margin-bottom: 8px;
 }
-
 .intro-section h1 {
   font-size: 2.6rem;
   margin-bottom: 16px;
 }
-
 .tagline {
   color: #64748b;
   font-size: 1.05rem;
   max-width: 60ch;
   margin-bottom: 28px;
 }
-
-.action-btns {
+.actions {
   display: flex;
   gap: 12px;
   margin-bottom: 24px;
 }
-
-.primary-link {
+.main-action {
   background: linear-gradient(90deg, #5b8def, #7b61ff);
   color: white;
   padding: 12px 24px;
@@ -130,29 +112,25 @@ img {
   font-weight: 700;
   display: inline-block;
 }
-
-.outline-link {
+.secondary-action {
   border: 1px solid rgba(20, 24, 37, 0.06);
   padding: 12px 24px;
   border-radius: 12px;
   display: inline-block;
 }
-
-.tech-tags {
+.skills {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   list-style: none;
 }
-
-.tech-tags li {
+.skills li {
   background: rgba(20, 24, 37, 0.04);
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 600;
 }
-
 .info-card {
   background: #ffffff;
   border-radius: 16px;
@@ -161,56 +139,46 @@ img {
   gap: 16px;
   box-shadow: 0 8px 24px rgba(50, 60, 80, 0.06);
 }
-
 .info-card img {
   width: 100px;
   height: 100px;
   border-radius: 12px;
   object-fit: cover;
 }
-
 .info-card h3 {
   font-size: 1.1rem;
   margin-bottom: 4px;
 }
-
 .info-card p {
   color: #64748b;
   font-size: 0.95rem;
 }
-
 .stats {
   display: flex;
   gap: 16px;
   margin-top: 12px;
   font-size: 0.9rem;
 }
-
 .stats strong {
   display: block;
   font-size: 1.1rem;
   color: #1a1f2e;
 }
-
 /* Content Sections */
 .content-section {
   padding: 64px 0;
 }
-
 .section-head {
   margin-bottom: 32px;
 }
-
 .section-head h2 {
   font-size: 1.8rem;
   margin-bottom: 12px;
 }
-
 .section-head p {
   color: #64748b;
   font-size: 1.05rem;
 }
-
 /* Cards & Grids */
 .card-grid,
 .work-grid {
@@ -218,68 +186,54 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
-.card,
-.work-card {
+.card,.work-card {
   background: #ffffff;
   border-radius: 12px;
   padding: 20px;
   border: 1px solid rgba(20, 24, 37, 0.06);
   box-shadow: 0 4px 16px rgba(50, 60, 80, 0.06);
 }
-
-.card h3,
-.work-card h3 {
+.card h3,.work-card h3 {
   margin-bottom: 12px;
 }
-
 .skill-list {
   list-style: none;
 }
-
 .skill-list li {
   padding: 10px 0;
   border-bottom: 1px dashed rgba(20, 24, 37, 0.06);
   display: flex;
   flex-direction: column;
 }
-
 .skill-list li:last-child {
   border-bottom: none;
 }
-
 .skill-list span {
   color: #64748b;
   font-size: 0.9rem;
 }
-
 .work-card {
   padding: 0;
   overflow: hidden;
 }
-
 .work-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-
 .work-info {
   padding: 18px;
 }
-
 .tech-stack {
   color: #64748b;
   font-size: 0.9rem;
   margin: 12px 0;
 }
-
 .tech-badges {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-
 .badge {
   background: rgba(91, 141, 239, 0.1);
   color: #5b8def;
@@ -288,44 +242,36 @@ img {
   font-size: 0.9rem;
   font-weight: 600;
 }
-
-.work-card .links {
+.project-links {
   display: flex;
   gap: 16px;
 }
-
-.work-card .links a {
+.project-links a {
   color: #5b8def;
   font-weight: 600;
 }
-
 /* Contact Section */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: 32px;
 }
-
 .contact-info h3,
 .contact-form-wrap h3 {
   margin: 24px 0 12px;
 }
-
 .contact-info h3:first-child,
 .contact-form-wrap h3:first-child {
   margin-top: 0;
 }
-
 .contact-info a {
   color: #5b8def;
 }
-
 .msg-form {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-
 .msg-form input,
 .msg-form textarea {
   padding: 12px;
@@ -334,7 +280,6 @@ img {
   font-family: inherit;
   font-size: 0.95rem;
 }
-
 .msg-form button {
   background: linear-gradient(90deg, #5b8def, #7b61ff);
   color: white;
@@ -345,49 +290,41 @@ img {
   cursor: pointer;
   align-self: flex-start;
 }
-
 /* Footer */
 .bottom-bar {
   border-top: 1px solid rgba(20, 24, 37, 0.06);
   padding: 32px 0;
 }
-
 .footer-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .footer-wrap nav {
   display: flex;
   gap: 20px;
 }
-
 .footer-wrap a {
   color: #64748b;
 }
-
 /* Responsive Design */
 @media (max-width: 900px) {
   .menu-toggle {
     display: none;
   }
-
-  .hamburger {
+ .hamburger {
     display: flex;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
   }
-
-  .hamburger span {
+ .hamburger span {
     width: 28px;
     height: 3px;
     background: #1a1f2e;
     border-radius: 3px;
   }
-
-  .main-nav ul {
+ .main-nav ul {
     position: fixed;
     top: 64px;
     right: 20px;
@@ -399,33 +336,27 @@ img {
     box-shadow: 0 8px 32px rgba(50, 60, 80, 0.06);
     display: none;
   }
-
   .menu-toggle:checked~.main-nav ul {
     display: flex;
   }
-
   .intro-layout {
     grid-template-columns: 1fr;
   }
-
   .card-grid,
   .work-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 600px) {
   .intro-section h1 {
     font-size: 2rem;
   }
-
   .card-grid,
   .work-grid,
   .contact-layout {
     grid-template-columns: 1fr;
   }
-
-  .footer-wrap {
+ .footer-wrap {
     flex-direction: column;
     gap: 16px;
     text-align: center;
