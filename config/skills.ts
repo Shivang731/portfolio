@@ -1,0 +1,19 @@
+/**
+ * skills.ts
+ * ─────────────────────────────────────────────────────────────
+ * Skills grouped by category. Keys become category labels on the
+ * left; values become the chip list on the right.
+ *
+ * Add, remove, or rename categories freely — the Résumé section
+ * iterates over Object.entries(skills), so the UI adapts.
+ * ─────────────────────────────────────────────────────────────
+ */
+
+export type Skills = Record<string, string[]>
+
+export const skills: Skills = {
+  "Languages":         ["TypeScript", "JavaScript", "Python", "Java"],
+  "Frontend":          ["React", "Next.js", "TailwindCSS"],
+  "Backend":           ["Node.js"],
+  "Blockchain":        ["Solana"],
+}
