@@ -21,4 +21,6 @@ export const links: LinkItem[] = [
   { title: "without.boats",          author: "withoutboats",    url: "https://without.boats",                                   tag: "rust" },
   { title: "Meditations",            author: "Marcus Aurelius", url: "https://www.gutenberg.org/ebooks/2680",                   tag: "philosophy" },
   { title: "Solana Program Library", author: "Solana Labs",     url: "https://spl.solana.com",                                  tag: "solana" },
+  { title: "a career guide for people in their early twenties", author: "Rich Zou",                  url: "https://x.com/richzou/status/2066647074935079413",             tag: "career" },
+  { title: "18 lessons for 18 years of life",                    author: "richard",                   url: "https://x.com/richardzphotoz/status/2068368840891994142",  tag: "wisdom" },
 ]
